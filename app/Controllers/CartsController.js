@@ -36,8 +36,7 @@ export default class CartsController {
             price: Number(form.price.value),
             // @ts-ignore
             description: form.description.value,
-            // @ts-ignore
-            imgUrl: form.imgUrl.value
+
         }
         cartsService.createCart(newCart)
 

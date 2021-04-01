@@ -4,8 +4,7 @@ import Cart from "../Models/Cart.js";
 
 class CartsService {
     createCart(newCart) {
-        debugger
-        let cart = new Cart(newCart.make, newCart.model, newCart.year, newCart.price, newCart.description, newCart.imgUrl)
+        let cart = new Cart(newCart.make, newCart.model, newCart.year, newCart.price, newCart.description)
         ProxyState.carts = [...ProxyState.carts, cart]
     }
     bid(id) {
